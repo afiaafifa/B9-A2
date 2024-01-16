@@ -45,15 +45,19 @@ margin-left: 150px;
 #whereInput{
 
     width: 174px;
-height: 52px;
-flex-shrink: 0;
-border-radius: 8px;
-background: #FFF;
-color: rgba(19, 19, 24, 0.50);
+    height: 52px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: #FFF;
+    border: 0;
+
+}
+#whereInput input{
+    color: rgba(19, 19, 24, 0.50);
+text-align: center;
 font-size: 16px;
 font-weight: 400;
-border: 0;
-
+padding: 16px 80px 16px 16px;
 }
 .whenDropdown{
     width: 174px;
@@ -87,6 +91,10 @@ border: 0;
 background: #FF5400;
 border: 0;
 }
+.btn-primary> img , span {
+    display: inline;
+   
+}
 .btn-primary:hover {
     color: rgba(255, 255, 255, 1);
     background-color: #5f1800;
@@ -100,6 +108,7 @@ font-weight: 700;
     width: 24px;
     height: 24px;
     flex-shrink: 0;
+    padding-right: 5px;
 }
 /* popular section styles */
 .tour-container{
@@ -478,7 +487,7 @@ line-height: 26px;
 padding: 0 300px 35px;
 }
 
-.line{
+.line-one{
     display:flex;
     justify-content: space-between;
     align-items: center;
