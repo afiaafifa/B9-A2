@@ -437,8 +437,77 @@ background: #FF5400;
 position: relative;
 top: -170px;
 left: 238px;
-
 }
+/* footer section styles */
+.footer{
+    width: 1440px;
+height: 502px;
+flex-shrink: 0;
+background: rgba(19, 19, 24, 0.05);
+margin-top: 400px;
+}
+.font{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+.group-img{
+    width: 40px;
+height: 46.673px;
+flex-shrink: 0;
+padding-right: 16px;
+padding-bottom: 15px;
+}
+.footer-title{
+    color:  #131318;
+font-weight: 800;
+padding-bottom: 15px;
+}
+.footer-title-travel{
+    color: #FF5400;
+font-size: 32px;
+font-weight: 800;
+padding-bottom: 15px;
+}
+.footer-description{
+    color: #5A5A5D;
+text-align: center;
+font-size: 16px;
+font-weight: 400;
+line-height: 26px;
+padding: 0 300px 35px;
+}
+
+.line{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #FFF;
+    padding-top: 20px;
+    width: 1320px;
+height: 1px;
+}
+.social-icons{
+    justify-content: center;
+    padding: 0px 570px 20px;
+}
+.line-two{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #FFF;
+    padding-top: 50px;
+    width: 872px;
+height: 1px;
+}
+.rights{ color: #131318;
+font-size: 16px;
+font-weight: 300;
+justify-content: center;
+padding: 150px 0 110px;
+margin-left: 560px;
+}
+
 
 
 
