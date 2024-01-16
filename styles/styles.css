@@ -217,21 +217,27 @@ flex-shrink: 0;
 
 .one {
     grid-area: one;
+    margin-left: 50px;
 }
 .two {
     grid-area: two;
+    margin-left: 50px;
 }
 .three {
     grid-area: three;
+    margin-left: 50px;
 }
 .four {
     grid-area: four;
+    margin-right: 0;
 }
 .five {
     grid-area: five;
+   
 }
 .six {
     grid-area: six;
+    margin-left: 50px;
 }
 .seven {
     grid-area: seven;
@@ -247,6 +253,67 @@ flex-shrink: 0;
     grid-row-gap: 10px; 
 }
 
+/* Why Choose Us styles */
+.Choose-Us-title{
+    color: #131318;
+text-align: center;
+font-size: 40px;
+font-weight: 800;
+padding-bottom: 24px;
+margin: 150px 560px 0;
+}
+.Choose-Us-description{
+    width: 643px;
+    color: rgba(19, 19, 24, 0.70);
+text-align: center;
+font-size: 16px;
+font-weight: 400;
+line-height: 26px;
+margin: 0 390px;
+}
+.eight{
+    grid-area: eight;
+    margin-left: 50px;
+}
+.nine{
+    grid-area: nine;
+}
+.ten{
+    grid-area: ten;
+}
+.eight, .nine, .ten{
+    width: 573px;
+height: 284px;
+flex-shrink: 0;
+border-radius: 16px;
+border: 1px solid rgba(251, 181, 99, 0.20);
+background: rgba(251, 181, 99, 0.05);
+}
+.choose-img{
+    width: 64px;
+height: 64px;
+flex-shrink: 0;
+}
+.choose-title{
+    color: #131318;
+text-align: center;
+font-size: 24px;
+font-weight: 800;
+}
+.choose-description{
+    color: #5A5A5D;
+font-size: 16px;
+font-weight: 400;
+line-height: 26px;
+}
+.choose{
+    display: grid;
+    grid-template-areas: 
+    "eight eight eight nine nine nine"
+    " .      .    ten  ten   .     .";
+    gap: 20px;
+
+}
 
 
 
