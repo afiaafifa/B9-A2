@@ -52,6 +52,7 @@ background: #FFF;
 color: rgba(19, 19, 24, 0.50);
 font-size: 16px;
 font-weight: 400;
+border: 0;
 
 }
 .whenDropdown{
@@ -63,6 +64,7 @@ font-weight: 400;
     color: rgba(19, 19, 24, 0.50);
 font-size: 16px;
 font-weight: 400;
+border: 0;
 }
 
 .typeDropdown{
@@ -74,6 +76,7 @@ background: #FFF;
 color: rgba(19, 19, 24, 0.50);
 font-size: 16px;
 font-weight: 400;
+border: 0;
 }
 
 .btn-primary{
@@ -99,15 +102,13 @@ font-weight: 700;
     flex-shrink: 0;
 }
 /* popular section styles */
-.Our-Popular-Tours{
-    width: 1440px;
-height: 6940px;
-background: #FFF;
-margin-left: 40px;
-}
 .tour-container{
     display: flex;
     justify-content: space-between;
+}
+.Our-Popular-Tours{
+background: #FFF;
+margin-left: 40px;
 }
 
 .tour-title{
@@ -152,6 +153,107 @@ flex-shrink: 0;
 border-radius: 16px;
 background: url('../Images/Rectangle\ 4.png'), lightgray 50% / cover no-repeat;
 }
+
+/* Choose Your Destination styles */
+
+.destination-title{
+    color: #131318;
+text-align: center;
+font-size: 40px;
+font-weight: 800;
+padding: 150px 480px 24px;
+}
+.destination-description{
+    color: rgba(19, 19, 24, 0.70);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px; 
+    padding: 0 390px 45px ;
+}
+.one,
+.two,
+.three,
+.four,
+.five,
+.six,
+.seven{
+    margin: 0;
+}
+.one,
+.two,
+{
+    width: 573px;
+    height: 300px;
+    flex-shrink: 0;
+}
+.three{
+    width: 374px;
+height: 286px;
+flex-shrink: 0;
+}
+.four{
+    width: 474px;
+height: 286px;
+flex-shrink: 0;
+padding-right: 0;
+}
+.five{
+    width: 274px;
+height: 286px;
+flex-shrink: 0;
+padding-left: 0;
+}
+.six{
+    width: 473px;
+height: 300px;
+flex-shrink: 0;
+}
+.seven{
+    width: 673px;
+height: 300px;
+flex-shrink: 0;
+}
+
+.one {
+    grid-area: one;
+}
+.two {
+    grid-area: two;
+}
+.three {
+    grid-area: three;
+}
+.four {
+    grid-area: four;
+}
+.five {
+    grid-area: five;
+}
+.six {
+    grid-area: six;
+}
+.seven {
+    grid-area: seven;
+}
+.collage {
+    display: grid;
+    grid-template-areas:
+        "one    one    one    two    two    two"
+        "three  three  four   four   four   five"
+        "six    six    six   seven  seven  seven";
+    grid-template-columns: repeat(2, 1fr) repeat(3, 1fr) repeat(2, 1fr); 
+    grid-column-gap: 24px; 
+    grid-row-gap: 10px; 
+}
+
+
+
+
+
+
+
+
 
 
 
