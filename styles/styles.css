@@ -9,7 +9,6 @@
     background-image:linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url('../Images/Group\ 13\ \(1\)\ \(1\).png');
     width: 1170px;
 height: 500px;
-flex-shrink: 0;
 border-radius: 16px;
 margin: 30px 150px;
 background-color: #E6E6FA;   
@@ -168,7 +167,7 @@ background: url('../Images/Rectangle\ 4.png'), lightgray 50% / cover no-repeat;
 .destination-title{
     color: #131318;
 text-align: center;
-font-size: 40px;
+font-size: 35px;
 font-weight: 800;
 padding: 150px 480px 24px;
 }
@@ -180,88 +179,26 @@ padding: 150px 480px 24px;
     line-height: 26px; 
     padding: 0 390px 45px ;
 }
-.one,
-.two,
-.three,
-.four,
-.five,
-.six,
-.seven{
-    margin: 0;
-}
-.one,
-.two,
-{
-    width: 573px;
-    height: 300px;
-    flex-shrink: 0;
+
+.one{
+margin-right: 10px;
 }
 .three{
-    width: 374px;
-height: 286px;
-flex-shrink: 0;
+margin-right: 10px;
 }
 .four{
-    width: 474px;
-height: 286px;
-flex-shrink: 0;
-padding-right: 0;
-}
-.five{
-    width: 274px;
-height: 286px;
-flex-shrink: 0;
-padding-left: 0;
+margin-right: 10px;
 }
 .six{
-    width: 473px;
-height: 300px;
-flex-shrink: 0;
+margin-right: 10px;
 }
-.seven{
-    width: 673px;
-height: 300px;
-flex-shrink: 0;
-}
-
-.one {
-    grid-area: one;
-    margin-left: 50px;
-}
-.two {
-    grid-area: two;
-    margin-left: 50px;
-}
-.three {
-    grid-area: three;
-    margin-left: 50px;
-}
-.four {
-    grid-area: four;
-    margin-right: 0;
-}
-.five {
-    grid-area: five;
-   
-}
-.six {
-    grid-area: six;
-    margin-left: 50px;
-}
-.seven {
-    grid-area: seven;
-}
-.collage {
+.collage{
+    width: 90%;
+margin: auto;
     display: grid;
-    grid-template-areas:
-        "one    one    one    two    two    two"
-        "three  three  four   four   four   five"
-        "six    six    six   seven  seven  seven";
-    grid-template-columns: repeat(2, 1fr) repeat(3, 1fr) repeat(2, 1fr); 
-    grid-column-gap: 24px; 
-    grid-row-gap: 10px; 
+   grid-template-columns: repeat(1fr);
+  gap: 24px;
 }
-
 /* Why Choose Us styles */
 .Choose-Us-title{
     color: #131318;
@@ -269,7 +206,9 @@ text-align: center;
 font-size: 40px;
 font-weight: 800;
 padding-bottom: 24px;
-margin: 150px 560px 0;
+width: 50%;
+margin: auto;
+margin-top: 150px;
 }
 .Choose-Us-description{
     width: 643px;
@@ -316,6 +255,7 @@ font-weight: 400;
 line-height: 26px;
 }
 .choose{
+    margin: 50px;
     display: grid;
     grid-template-areas: 
     "eight eight eight nine nine nine"
@@ -521,35 +461,113 @@ margin-left: 560px;
 
 
 
+@media only screen and (max-width: 576px) {
+    .banner{
+        width: 90%;
+        margin: auto;
 
-
-
-
-
-
-/* Responsive styles for smaller screens (mobile devices) */
-@media screen and (max-width: 592px) {
-    .banner {
-        width: 100%;
-        height: auto;
-        margin: 30px 0;
-        padding: 20px; /* Adjust padding as needed */
+    }
+    .banner-title {
+        padding: 30px 10px 0;
+        font-size: 20px;
     }
 
-    .banner-title,
     .banner-description {
-        padding: 20px; /* Adjust padding as needed */
+        padding: 10px;
+        font-size: 10px;
     }
 
     .banner-input {
+        display: flex;
+        flex-direction:column ;
+        align-items: center;
+        margin: 10px;
+    }
+
+    .tour-container {
+        margin-top: 30px;
+        flex-direction: column;
+       
+    }
+
+    
+
+    .Rectangle-4 {
+        width: 100%;
+        height: auto;
+    }
+
+    .destination-title {
+        padding: 30px 10px 10px;
+    }
+
+    .destination-description {
+        padding: 0 10px 20px;
+    }
+
+    .Choose-Us-title {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .Choose-Us-description {
+        margin: 0 10px;
+    }
+
+    .choose {
+        margin: 10px;
+    }
+
+    .Newsletter-section {
+        flex-direction: column;
+    }
+
+    .Newsletter {
+        width: 100%;
+        height: auto;
         margin-left: 0;
     }
 
-    #whereInput,
-    .whenDropdown,
-    .typeDropdown,
-    .btn-primary {
+    .line {
+        flex-direction: column;
+        padding-top: 10px;
+    }
+
+    .name,
+    .email {
         width: 100%;
-        margin-bottom: 10px; /* Adjust margin as needed */
+    }
+
+    .footer {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .font {
+        margin-top: 10px;
+    }
+
+    .line-one {
+        width: 100%;
+        padding-top: 10px;
+    }
+
+    .social-icons {
+        padding: 0px 10px 20px;
+    }
+
+    .line-two {
+        width: 100%;
+        padding-top: 10px;
+    }
+
+    .rights {
+        margin-left: 10px;
     }
 }
+
+
+
+
+
+
